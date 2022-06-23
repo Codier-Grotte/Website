@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:wght@300&display=swap');
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    margin:0;
+    background-image: url("Bckgrnd.jpg");
+    background-attachment:fixed;
+    background-size:1920px 1080px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#navbar {
+    background: #F2F2F2;
+    min-width: 500px;
+    margin-top: 0;
+    display: flex;
+    border-radius: 0 0.2em 0.2em 0;     
+    margin-right: 60px;
+    top: 0px;
+    transition: 0.3s ease;
+    position: fixed;
+    padding: 20px 10px;
+    width: 100%;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: #242540 1px 1px 8px;
+    min-width: 900px;
+}
+
+#navbar_choice a {
+    text-decoration: none;
+    color: #4B69A6;
+    padding: 1em;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#navbar_choice a:hover {
+    background-color: #4B69A6;
+    color: #F2F2F2;
+    transition: ease 0.4s;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+#navbar a.active {
+    color: #ffffff;
+    font-weight: 900;
+    cursor: default;
+    border-style: solid;
+    border-bottom: none;
+    background-color: #4B69A6;
+}
+
+#navbar #logo {
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(27, 85, 85);
+    padding: 0.05em 1em 0 0;
+    height: 0.9em;
+    position: relative;
+    left: 0.3em;
+}
+
+#navbar #logo:hover {
+    transition: 2s ease;
+    height: 100px;
+}
+
+section {
+    margin-top: 23em;
+}
+
+p {
+    color: #242540;
+    font-size: 22px;
+    background: #F2F2F2;
+    padding: 3em 20% 0 20%;
+    text-align: justify;
+    min-width: 900px;
+    height: 400px;
+}
+
+h1 {
+    padding: 5em 0 0 1em;
+    font-size:70px;
+    color: #F2F2F2;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pic {
+    float: right;
+    margin: 0 0 0 3em;
+    height: 300px;
+    border-radius: 0.3em;
+    transition:transform 0.3s ease;
+    
+}
+
+.pic:hover {
+    -webkit-transform: scale(2);
+    transition-delay: 0.5s;
+    transform: scale(2);
+}
