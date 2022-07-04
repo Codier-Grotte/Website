@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:wght@300&display=swap');
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior:smooth;         /*References to other parts of site are smoothed*/
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     font-weight: 100;
 }
 
-#navbar {
+#navbar {                           /*Navigationbar settings*/
     background: #F2F2F2;
     min-width: 500px;
     margin-top: 0;
@@ -31,7 +31,7 @@ body {
     min-width: 900px;
 }
 
-#navbar_choice a {
+#navbar_choice a {                  /*Selection on navbar*/
     text-decoration: none;
     color: #4B69A6;
     padding: 1em;
@@ -40,15 +40,15 @@ body {
     font-weight: 700;
 }
 
-#navbar_choice a:hover {
+#navbar_choice a:hover {            /*Current selection on navbar*/
     background-color: #4B69A6;
     color: #F2F2F2;
-    transition: ease 0.4s;
+    transition: 0.4s ease;
     font-weight: 900;
     padding-bottom: 20px;
 }
 
-#navbar a.active {
+#navbar a.active {                  /*Current active displayed site on navbar*/
     color: #ffffff;
     font-weight: 900;
     cursor: default;
@@ -57,7 +57,7 @@ body {
     background-color: #4B69A6;
 }
 
-#navbar #logo {
+#navbar #logo {                     /*Settings for logo top left corner on navbar*/
     font-weight: bold;
     transition: 0.3s;
     text-decoration: none;
@@ -68,16 +68,16 @@ body {
     left: 0.3em;
 }
 
-#navbar #logo:hover {
-    transition: 2s ease;
+#navbar #logo:hover {               /*Increases logo while hovering*/
+    transition: 1.5s ease;
     height: 100px;
 }
 
-section {
+section {                           /*Section settings*/
     margin-top: 23em;
 }
 
-p {
+p {                                 /*Paragraph settings*/
     color: #242540;
     font-size: 22px;
     background: #F2F2F2;
@@ -85,9 +85,12 @@ p {
     text-align: justify;
     min-width: 900px;
     height: 400px;
+    margin: 2px;    
+    margin-left: 0;
+    margin-right: 0;
 }
 
-h1 {
+h1 {                                /*First displayed title*/
     padding: 5em 0 0 1em;
     font-size:70px;
     color: #F2F2F2;
@@ -95,17 +98,84 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.pic {
+h2 {                                /* smaller titles*/
+    padding: 0em 0 0 10%;
+    font-size:40px;
+    color: #F2F2F2;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pic {                              /* Image settings*/
     float: right;
     margin: 0 0 0 3em;
     height: 300px;
     border-radius: 0.3em;
     transition:transform 0.3s ease;
+    box-shadow: #242540 3px 3px 4px;
     
 }
 
-.pic:hover {
+.pic:hover {                        /*Image hover: small delay before enlargment*/
     -webkit-transform: scale(2);
     transition-delay: 0.5s;
-    transform: scale(2);
+    transform: scale(150%);
+}
+
+.link {                             /*color settings for hyperlinks*/
+    color: rgba(102, 52, 52, 0.904);
+    text-decoration: none;
+}
+
+.link:hover {                       /*color settings for hovering over hyperlinks*/
+    color: #477a40;
+}
+
+.top-padding {                      /*no space between p and section*/
+    margin: 0;
+}
+
+
+
+footer {
+    background-color: #F2F2F2;    /*Footer settings*/
+}
+
+.display_code {                     /*creates the box in which the codes are put in*/
+    min-width: 500px;
+    max-width: 1500px;
+    height: 600px;
+    overflow:scroll;
+    font-size: 16px;
+    background: #F2F2F2;
+    padding: 3em 0% 0 0%;
+    margin: 2px 10% 2px 10%;
+}
+
+.pic_proj {                         /* pictures on the project tab*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 350px;
+    border-radius: 0.3em;
+    transition:transform 0.3s ease;
+    box-shadow: #242540 3px 3px 4px;
+}
+
+.pic_proj:hover {                        /*Image hover: small delay before enlargment*/
+    -webkit-transform: scale(2);
+    transition-delay: 0.5s;
+    transform: scale(150%);
+}
+
+.proj_after {                            /* responsible for projects after the first one, goes for every following project*/
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.proj_before {                           /* responsible for the first project*/
+    padding-bottom: 100px;
+    margin-left: 0;
+    margin-right: 0;
 }
